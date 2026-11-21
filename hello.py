@@ -1,1 +1,2 @@
-print('Hello, Github!')
+print('Hello, GitHub!')
+print('Меня зовут Никита, мне 19 лет и я пробую изучить python без курсов и преподователей, использую только Clode AI.')
