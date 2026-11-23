@@ -7,7 +7,7 @@ guess = 0
 attempts = 0
 
 
-while guess != secret:
+while guess != secret and attempts < 7:
     guess = int(input("Угадай число: "))
     attempts = attempts +1
     if guess == secret:
@@ -16,4 +16,8 @@ while guess != secret:
         print("Загаданное число больше")
     else:
         print("Загаданное число меньше")
-print("Ты справился за", attempts, "попыток")
+if guess == secret:
+    print("Ты справился за", attempts, "попыток")
+else:
+    print("Ты проиграл. Было загадано:", secret)
+    
